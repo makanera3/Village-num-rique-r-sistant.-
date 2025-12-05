@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIRD - Le Village Numérique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Fredoka', sans-serif;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #6366f1; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4f46e5; 
+      }
+
+      /* Animations */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.2; transform: scale(0.8); }
+        50% { opacity: 1; transform: scale(1.2); }
+      }
+      .animate-twinkle {
+        animation: twinkle 3s ease-in-out infinite;
+      }
+      .delay-100 { animation-delay: 100ms; }
+      .delay-200 { animation-delay: 200ms; }
+      .delay-500 { animation-delay: 500ms; }
+      .delay-700 { animation-delay: 700ms; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
